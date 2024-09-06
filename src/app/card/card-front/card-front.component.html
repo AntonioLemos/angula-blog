@@ -1,0 +1,23 @@
+<div class="card-front">
+    <div class="card-header">
+      <img src="../../../assets/imgs/logo.png" />
+      <h1>WIZARD NATIONAL IDENTIFICATION CARD</h1>
+      <div class="img-header">
+        <img src="../../../assets/imgs/draw_svg.png" />
+      </div>
+    </div>
+    <div class="card-profile">
+      <img [src]="imgProfile" />
+      <div class="card-description">
+        <h1>{{ namePerson.toUpperCase() }}</h1>
+        <p class="course">Course: {{ coursePerson.toUpperCase() }}</p>
+        <p class="birthday">Birthday: {{ getFormattedBirthday() }}</p>
+        <p class="documentPersons">Document.: {{ documentPerson }}</p>
+      </div>
+    </div>
+    <div class="card-bottom">
+      <img [src]="qrcodeProfile" />
+      <h1>USE CODE: {{ useCode }}</h1>
+      <p>{{ year }}</p>
+    </div>
+  </div>

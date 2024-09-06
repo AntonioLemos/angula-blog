@@ -1,0 +1,34 @@
+<div class="container">
+  <form (submit)="onSubmit(cardForm)" #cardForm="ngForm">
+    <div class="form-group">
+      <label for="namePerson">Name:</label>
+      <input type="text" id="namePerson" name="namePerson" [(ngModel)]="namePerson" maxlength="30" required />
+    </div>
+    <div class="form-group">
+      <label for="coursePerson">Course:</label>
+      <input type="text" id="coursePerson" name="coursePerson" [(ngModel)]="coursePerson" maxlength="30" required />
+    </div>
+    <div class="form-group">
+      <label for="birthdayPerson">Birthday:</label>
+      <input type="date" id="birthdayPerson" name="birthdayPerson" [(ngModel)]="birthdayPerson" required/>
+    </div>
+    <div class="form-group">
+      <label for="documentPerson">Document:</label>
+      <input type="text" id="documentPerson" name="documentPerson" [(ngModel)]="documentPerson" maxlength="20"
+        required />
+    </div>
+    <button type="submit" style="background-color: transparent;"> <img src="../../../assets/imgs/send.svg" style="width: 50px;height: 50px;cursor: pointer;"
+        alt="Enviar" title="Send">
+    </button>
+  </form>
+
+  <div class="card" [ngClass]="{'flipped': isFlipped}" (click)="flipCard()" style="cursor: pointer;">
+    <app-card-front [namePerson]="namePerson" [coursePerson]="coursePerson" [birthdayPerson]="birthdayPerson"
+      [documentPerson]="documentPerson" [imgProfile]="imgProfile" [qrcodeProfile]="qrcodeProfile" [useCode]="useCode"
+      [year]="year">
+    </app-card-front>
+    <app-card-back [useCode]="useCode" [year]="year" [qrcodeProfile]="qrcodeProfile" [coursePerson]="coursePerson"
+      [birthdayPerson]="birthdayPerson">
+    </app-card-back>
+  </div>
+</div>

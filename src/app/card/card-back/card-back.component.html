@@ -1,0 +1,13 @@
+<div class="card-back">
+  <div class="card-profile">
+    <img [src]="qrcodeProfile" alt="QR Code">
+    <div class="card-description">
+      <p class="course">{{ coursePerson.toUpperCase()  }}</p>
+      <p class="birthday">{{ getFormattedBirthday() }}</p>
+    </div>
+  </div>
+  <div class="card-bottom">
+    <h1>{{ useCode }}</h1>
+    <p>{{ year }}</p>
+  </div>
+</div>
