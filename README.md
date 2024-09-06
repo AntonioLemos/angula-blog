@@ -30,6 +30,6 @@ Throughout the development of the **Wizard National Identification Card**, the f
 - **User Interaction**: Designing interactive forms and managing user input and validation effectively.
 - **Routing and Navigation**: Utilizing Angular's routing module to create a smooth user experience with seamless navigation.
 
-  ![image](https://github.com/user-attachments/assets/8d82e390-0f09-487c-9fb9-c558bdc4bbb2)
-  ![image](https://github.com/user-attachments/assets/d343d75b-cceb-4811-9edf-896d2cfc7046)
+![image](https://github.com/user-attachments/assets/2d28a303-6565-4009-a47e-a86437ce5a67)
+![image](https://github.com/user-attachments/assets/d343d75b-cceb-4811-9edf-896d2cfc7046)
 
